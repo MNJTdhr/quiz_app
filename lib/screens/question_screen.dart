@@ -22,9 +22,11 @@ class _QuestionScreenState extends State<QuestionScreen> {
           flex: 2,
           child: Center(
             child: TextButton(
+              style: TextButton.styleFrom(backgroundColor: Colors.blue),
               onPressed: () {},
               child: Text(
                 "data",
+                style: TextStyle(color: Colors.white),
               ),
             ),
           ),
