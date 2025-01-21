@@ -13,17 +13,10 @@ class MyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(4.0),
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 1),
-        width: double.infinity,
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
-          onPressed: onPressed,
-          child: Text(incomingText, style: TextStyle(color: Colors.white)),
-        ),
-      ),
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+      onPressed: onPressed,
+      child: Text(incomingText, style: TextStyle(color: Colors.white)),
     );
   }
 }
