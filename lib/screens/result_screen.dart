@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({
-    // required this.score,
-    // required this.totalScore,
+    required this.score,
+    required this.totalScore,
+    required this.onClickMoveToStart,
     super.key,
   });
 
-  // final int score;
-  // final int totalScore;
+  final void Function() onClickMoveToStart;
+  final int score;
+  final int totalScore;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class ResultScreen extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Your Score is score out of totalScore",
+          "Your Score is $score out of $totalScore",
           style: TextStyle(fontSize: 20),
         ),
         Text(
@@ -24,12 +26,11 @@ class ResultScreen extends StatelessWidget {
           style: TextStyle(fontSize: 20),
         ),
         ElevatedButton.icon(
-          onPressed: () {},
-          icon: 
-            Icon(
-              Icons.restart_alt,
-              color: Colors.white,
-            ),
+          onPressed: onClickMoveToStart,
+          icon: Icon(
+            Icons.restart_alt,
+            color: Colors.white,
+          ),
           label: Text("Restart"),
         ),
       ],
