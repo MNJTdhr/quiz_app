@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/models/questions_data.dart';
 import 'screens/start_page.dart';
 import 'screens/question_screen.dart';
+import 'screens/result_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -20,7 +21,7 @@ class _QuizState extends State<Quiz> {
 
     if (selectedAnswer.length == questions.length) {
       setState(() {
-      activeScreen = StartPage(switchScreenFromStartToQuestionScreen);
+      activeScreen = ResultScreen();
         
       });
     }
