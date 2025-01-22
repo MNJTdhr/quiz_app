@@ -22,6 +22,11 @@ class ResultScreen extends StatelessWidget {
           "Your Score is $score out of $totalScore",
           style: TextStyle(fontSize: 20),
         ),
+        //todo: display lists of answers attempted, right or wrong. If wrong also add the correct answer.
+        // Text(
+        //   "List of Answers attempted:",
+        //   style: TextStyle(fontSize: 20),
+        // ),
         ElevatedButton.icon(
           onPressed: onClickMoveToStart,
           icon: Icon(
