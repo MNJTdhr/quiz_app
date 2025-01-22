@@ -4,12 +4,7 @@ import 'package:quiz_app/models/question_blueprint.dart';
 const questions = [
   QuestionBlueprint(
     'What are the main building blocks of Flutter UIs?',
-    [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
-    ],
+    ['Widgets', 'Components', 'Blocks', 'Functions'],
   ),
   QuestionBlueprint(
     'How are Flutter UIs built?',

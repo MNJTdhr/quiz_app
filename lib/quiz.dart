@@ -1,6 +1,7 @@
 //quiz dart
 import 'package:flutter/material.dart';
-import 'start_page.dart';
+import 'package:quiz_app/models/questions_data.dart';
+import 'screens/start_page.dart';
 import 'screens/question_screen.dart';
 
 class Quiz extends StatefulWidget {
@@ -16,6 +17,13 @@ class _QuizState extends State<Quiz> {
 
   void choosenAnswers(String answers) {
     selectedAnswer.add(answers);
+
+    if (selectedAnswer.length == questions.length) {
+      setState(() {
+      activeScreen = StartPage(switchScreenFromStartToQuestionScreen);
+        
+      });
+    }
   }
 
   @override
