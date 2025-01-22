@@ -16,7 +16,11 @@ class MyButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
       onPressed: onPressed,
-      child: Text(incomingText, style: TextStyle(color: Colors.white)),
+      child: Text(
+        incomingText,
+        style: TextStyle(color: Colors.white),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
