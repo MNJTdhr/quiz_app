@@ -1,3 +1,4 @@
+// lib/screens/result_screen.dart
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatelessWidget {
@@ -19,10 +20,6 @@ class ResultScreen extends StatelessWidget {
       children: [
         Text(
           "Your Score is $score out of $totalScore",
-          style: TextStyle(fontSize: 20),
-        ),
-        Text(
-          "List of answered questions",
           style: TextStyle(fontSize: 20),
         ),
         ElevatedButton.icon(
